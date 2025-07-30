@@ -12,14 +12,19 @@
     --blur: blur(8px);
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: var(--text);
-    margin: 0;
-    padding: 0;
     min-height: 100vh;
     background: url('https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80') center/cover no-repeat fixed;
+    overflow-x: hidden;
 }
 
 body::before {
@@ -35,7 +40,7 @@ body::before {
 }
 
 .container {
-    width: 90%;
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
@@ -50,6 +55,7 @@ nav {
     z-index: 100;
     box-shadow: var(--shadow);
     border-bottom: var(--border);
+    padding: 0 20px;
 }
 
 .nav-container {
@@ -57,6 +63,8 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem 0;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .logo {
@@ -93,7 +101,7 @@ nav {
 
 /* Header - Home Section */
 .home-section {
-    padding: 8rem 0 5rem;
+    padding: 8rem 20px 5rem;
     position: relative;
 }
 
@@ -101,6 +109,9 @@ nav {
     display: flex;
     align-items: center;
     gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .header-text {
@@ -147,7 +158,7 @@ nav {
 
 /* About Me Section */
 .about-section {
-    padding: 5rem 0;
+    padding: 5rem 20px;
 }
 
 .about-content {
@@ -206,11 +217,12 @@ nav {
     box-shadow: var(--shadow);
     border: var(--border);
     transition: var(--transition);
+    width: 100%;
 }
 
 /* Education Section */
 .education-section {
-    padding: 5rem 0;
+    padding: 5rem 20px;
 }
 
 .section-title {
@@ -270,8 +282,7 @@ nav {
     color: var(--secondary);
 }
 
-.duration,
-.grade {
+.duration, .grade {
     margin: 0.5rem 0;
     display: flex;
     align-items: center;
@@ -285,7 +296,7 @@ nav {
 
 /* Current Studies Section */
 .current-studies-section {
-    padding: 5rem 0;
+    padding: 5rem 20px;
 }
 
 .current-studies-card {
@@ -333,7 +344,7 @@ nav {
 
 /* Projects Section */
 .projects-section {
-    padding: 5rem 0;
+    padding: 5rem 20px;
 }
 
 .projects-grid {
@@ -368,29 +379,15 @@ nav {
 
 /* Contact Section */
 .contact-section {
-    padding: 5rem 0;
+    padding: 5rem 20px;
 }
 
 .contact-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
-    box-sizing: border-box;
-}
-
-.contact-form {
-    background: var(--card-bg);
-    backdrop-filter: var(--blur);
-    border-radius: 15px;
-    padding: 2rem;
-    box-shadow: var(--shadow);
-    border: var(--border);
-    transition: var(--transition);
-    width: 100%;
-    box-sizing: border-box;
 }
 
 .form-group {
@@ -514,12 +511,29 @@ footer {
     backdrop-filter: var(--blur);
     color: var(--text-light);
     text-align: center;
-    padding: 2rem 0;
+    padding: 2rem 20px;
     border-top: var(--border);
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    nav {
+        padding: 0 15px;
+    }
+
+    .home-section,
+    .about-section,
+    .education-section,
+    .current-studies-section,
+    .projects-section,
+    .contact-section {
+        padding: 3rem 15px;
+    }
+
     .nav-links {
         position: fixed;
         top: 80px;
@@ -546,19 +560,18 @@ footer {
     .header-container {
         flex-direction: column;
         text-align: center;
+        padding: 0 15px;
     }
 
     .profile-image {
         margin: 2rem auto 0;
+        width: 240px;
+        height: 270px;
     }
 
     .contact-container {
         grid-template-columns: 1fr;
         padding: 0 15px;
-    }
-
-    .contact-form {
-        padding: 1.5rem;
     }
 
     .tech-stack {
