@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Manikandan R, Full Stack Developer">
     <title>Manikandan R | Full Stack Developer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="StyleSheet/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
         (function() {
@@ -19,16 +21,16 @@
         <div class="container nav-container">
             <div class="logo">My Portfolio</div>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#current-studies">Current Studies</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home" aria-label="Home section">Home</a></li>
+                <li><a href="#about" aria-label="About section">About</a></li>
+                <li><a href="#education" aria-label="Education section">Education</a></li>
+                <li><a href="#current-studies" aria-label="Current Studies section">Current Studies</a></li>
+                <li><a href="#projects" aria-label="Projects section">Projects</a></li>
+                <li><a href="#contact" aria-label="Contact section">Contact</a></li>
             </ul>
-            <div class="mobile-menu-btn">
+            <button class="mobile-menu-btn" aria-label="Mobile menu button">
                 <i class="fas fa-bars"></i>
-            </div>
+            </button>
         </div>
     </nav>
 
@@ -39,36 +41,36 @@
                 <h1>Manikandan R</h1>
                 <h2>Full Stack Developer</h2>
                 <div class="contact-details">
-                    <p><i class="fas fa-map-marker-alt"></i> Cuddalore, Tamil Nadu</p>
-                    <p><i class="fas fa-phone"></i> +91 6383257486</p>
-                    <p><i class="fas fa-envelope"></i> Manikandan47989@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Cuddalore, Tamil Nadu</p>
+                    <p><i class="fas fa-phone" aria-hidden="true"></i> +91 6383257486</p>
+                    <p><i class="fas fa-envelope" aria-hidden="true"></i> Manikandan47989@gmail.com</p>
                 </div>
-                <a href="#contact" class="hire-me-btn">Hire Me</a>
+                <a href="#contact" class="hire-me-btn" aria-label="Hire me button">Hire Me</a>
             </div>
             <div class="profile-image">
-                <img src="IMG_20250726_225929.jpg" alt="Manikandan R">
+                <img src="images/profile.jpg" alt="Manikandan R - Full Stack Developer" width="280" height="310" loading="lazy">
             </div>
         </div>
     </header>
 
     <!-- About Me Section -->
-    <section id="about" class="about-section">
+    <section id="about" class="about-section" aria-labelledby="about-heading">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
+            <h2 class="section-title" id="about-heading">About Me</h2>
             <div class="about-content">
-                 <p style="line-height: 1.6;">
-        Hello! I’m <strong>Manikandan.R</strong>, a dedicated and detail-oriented professional with 3 years of experience as a 
-        <strong>Quality Assurance Engineer</strong> at Steel Strips Wheels Ltd. My passion for building software and solving real-world 
-        problems has led me to pursue a career in <strong>Java Full Stack Development</strong>.
-      </p>
-      <p style="line-height: 1.6;">
-        Currently upskilling in Java, Spring Boot, MySQL, HTML, CSS, JavaScript, and React.js, I’m focused on building clean, efficient, 
-        and user-friendly web applications. I bring strong testing, debugging, and quality analysis skills to ensure robust and scalable solutions.
-      </p>
-      <p style="line-height: 1.6;">
-        I am now seeking opportunities as a <strong>Java Developer (Fresher)</strong> where I can contribute, grow, and collaborate 
-        on impactful software projects.
-      </p>
+                <p>
+                    Hello! I'm <strong>Manikandan.R</strong>, a dedicated and detail-oriented professional with 3 years of experience as a 
+                    <strong>Quality Assurance Engineer</strong> at Steel Strips Wheels Ltd. My passion for building software and solving real-world 
+                    problems has led me to pursue a career in <strong>Java Full Stack Development</strong>.
+                </p>
+                <p>
+                    Currently upskilling in Java, Spring Boot, MySQL, HTML, CSS, JavaScript, and React.js, I'm focused on building clean, efficient, 
+                    and user-friendly web applications. I bring strong testing, debugging, and quality analysis skills to ensure robust and scalable solutions.
+                </p>
+                <p>
+                    I am now seeking opportunities as a <strong>Java Developer (Fresher)</strong> where I can contribute, grow, and collaborate 
+                    on impactful software projects.
+                </p>
 
                 <div class="skills">
                     <h3>Technical Skills</h3>
@@ -89,17 +91,17 @@
     </section>
 
     <!-- Education Section -->
-    <section id="education" class="education-section">
+    <section id="education" class="education-section" aria-labelledby="education-heading">
         <div class="container">
-            <h2 class="section-title">Education</h2>
+            <h2 class="section-title" id="education-heading">Education</h2>
             <div class="education-grid">
                 <div class="education-card">
-                    <div class="edu-wallpaper"></div>
+                    <div class="edu-wallpaper" aria-hidden="true"></div>
                     <h3>Bachelor of Engineering (Mechanical)</h3>
                     <p class="institute">
-                        <a href="https://ckcet.edu.in/" target="_blank">
+                        <a href="https://ckcet.edu.in/" target="_blank" rel="noopener noreferrer">
                             CK College of Engineering & Technology
-                            <i class="fas fa-external-link-alt"></i>
+                            <i class="fas fa-external-link-alt" aria-hidden="true"></i>
                         </a>
                     </p>
                     <p class="duration">2018 - 2021</p>
@@ -107,12 +109,12 @@
                 </div>
                 
                 <div class="education-card">
-                    <div class="edu-wallpaper"></div>
+                    <div class="edu-wallpaper" aria-hidden="true"></div>
                     <h3>Diploma in Mechanical Engineering</h3>
                     <p class="institute">
-                        <a href="https://vigneshwarapolytechnic.com/" target="_blank">
+                        <a href="https://vigneshwarapolytechnic.com/" target="_blank" rel="noopener noreferrer">
                             Vigneshwara Polytechnic College
-                            <i class="fas fa-external-link-alt"></i>
+                            <i class="fas fa-external-link-alt" aria-hidden="true"></i>
                         </a>
                     </p>
                     <p class="duration">2015 - 2018</p>
@@ -120,12 +122,12 @@
                 </div>
                 
                 <div class="education-card">
-                    <div class="edu-wallpaper"></div>
+                    <div class="edu-wallpaper" aria-hidden="true"></div>
                     <h3>SSLC (10th Standard)</h3>
                     <p class="institute">
-                        <a href="https://stjosephscud.com/" target="_blank">
+                        <a href="https://stjosephscud.com/" target="_blank" rel="noopener noreferrer">
                             St. Joseph's Higher Secondary School
-                            <i class="fas fa-external-link-alt"></i>
+                            <i class="fas fa-external-link-alt" aria-hidden="true"></i>
                         </a>
                     </p>
                     <p class="duration">Completed 2015</p>
@@ -135,16 +137,16 @@
     </section>
 
     <!-- Current Studies Section -->
-    <section id="current-studies" class="current-studies-section">
+    <section id="current-studies" class="current-studies-section" aria-labelledby="current-studies-heading">
         <div class="container">
-            <h2 class="section-title">Current Studies</h2>
+            <h2 class="section-title" id="current-studies-heading">Current Studies</h2>
             <div class="current-studies-card">
                 <div class="studies-content">
                     <h3>Full Stack Development Program</h3>
                     <p class="institute">
-                        <a href="https://uniqtechnologies.co.in/" target="_blank">
+                        <a href="https://uniqtechnologies.co.in/" target="_blank" rel="noopener noreferrer">
                             Uniq Technologies, Chennai
-                            <i class="fas fa-external-link-alt"></i>
+                            <i class="fas fa-external-link-alt" aria-hidden="true"></i>
                         </a>
                     </p>
                     <p class="duration">Shifa arcade No 1, 3rd Floor<br>
@@ -155,11 +157,11 @@
                         ☎ : 9600114466, 9500088927 <br>
                         April 2025 - Present</p>
                     <div class="tech-stack">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" width="60" height="60" loading="lazy">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" width="60" height="60" loading="lazy">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" width="60" height="60" loading="lazy">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" width="60" height="60" loading="lazy">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" width="60" height="60" loading="lazy">
                     </div>
                 </div>
             </div>
@@ -167,9 +169,9 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="projects-section">
+    <section id="projects" class="projects-section" aria-labelledby="projects-heading">
         <div class="container">
-            <h2 class="section-title">Projects</h2>
+            <h2 class="section-title" id="projects-heading">Projects</h2>
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-content">
@@ -211,39 +213,48 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact-section">
+    <section id="contact" class="contact-section" aria-labelledby="contact-heading">
         <div class="container">
-            <h2 class="section-title">Contact Me</h2>
+            <h2 class="section-title" id="contact-heading">Contact Me</h2>
             <div class="contact-container">
                 <form id="contact-form" class="contact-form">
                     <div class="form-group">
+                        <label for="name" class="sr-only">Your Name</label>
                         <input type="text" id="name" name="name" placeholder="Your Name" required>
                     </div>
                     <div class="form-group">
+                        <label for="email" class="sr-only">Your Email</label>
                         <input type="email" id="email" name="email" placeholder="Your Email" required>
                     </div>
                     <div class="form-group">
+                        <label for="message" class="sr-only">Your Message</label>
                         <textarea id="message" name="message" placeholder="Your Message" required></textarea>
                     </div>
                     <button type="submit" class="submit-btn">Send Message</button>
                 </form>
                 <div class="contact-info">
                     <div class="info-card">
-                        <i class="fas fa-envelope"></i>
+                        <i class="fas fa-envelope" aria-hidden="true"></i>
                         <p>Manikandan47989@gmail.com</p>
                     </div>
                     <div class="info-card">
-                        <i class="fas fa-phone"></i>
+                        <i class="fas fa-phone" aria-hidden="true"></i>
                         <p>+91 6383257486</p>
                     </div>
                     <div class="info-card">
-                        <i class="fas fa-map-marker-alt"></i>
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
                         <p>Cuddalore, Tamil Nadu</p>
                     </div>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-github"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+                            <i class="fab fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+                            <i class="fab fa-github" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://wa.me/916383257486" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp contact">
+                            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -253,11 +264,14 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2023 Manikandan R. All rights reserved.</p>
+            <p>&copy; <span id="current-year">2025</span> Manikandan R. All rights reserved.</p>
         </div>
     </footer>
 
     <script src="js/script.js"></script>
+    <script>
+        // Update copyright year automatically
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
-
