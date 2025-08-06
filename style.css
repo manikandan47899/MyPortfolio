@@ -1,4 +1,4 @@
-:root {
+ly attached :root {
     --primary: rgba(255, 255, 255, 0.9);
     --secondary: #2ecc71;
     --accent: #3498db;
@@ -548,3 +548,4 @@ footer {
         height: 50px;
     }
 }
+
