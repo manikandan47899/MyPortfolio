@@ -218,9 +218,8 @@ nav {
   transition: 0.3s;
   box-shadow: 0 6px 20px rgba(0,0,0,0.3);
 }
-/* ===== Instrument Grid Fix ===== */
 
-/* ===== Instrument Handling Cards ===== */
+
 /* ===== Instrument Handling Glass Cards ===== */
 
 #instruments .card{
@@ -312,7 +311,7 @@ nav {
     background: var(--card-bg);
     backdrop-filter: var(--blur);
     border-radius: 15px;
-    padding: 3rem;
+    padding: 1.25rem;
     box-shadow: var(--shadow);
     border: var(--border);
     transition: var(--transition);
@@ -635,4 +634,5 @@ footer {
 
 
 }
+
 
