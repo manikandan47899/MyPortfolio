@@ -25,6 +25,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+
+
 // Hire Me button smooth scroll
 document.querySelector('.hire-me-btn').addEventListener('click', function(e) {
     e.preventDefault();
@@ -51,6 +53,9 @@ document.getElementById('contact-form').addEventListener('submit', function(e) {
         email: document.getElementById('email').value,
         message: document.getElementById('message').value
     };
+
+
+    
     
     // Send email using EmailJS
     emailjs.send('service_r86vosn', 'template_itssbgp', formData)
@@ -65,4 +70,7 @@ document.getElementById('contact-form').addEventListener('submit', function(e) {
             submitBtn.disabled = false;
             submitBtn.textContent = 'Send Message';
         });
+
+
+        
 });
