@@ -136,7 +136,7 @@
     
     <h3 style="color:#2ecc71; margin-bottom:10px;">Roles & Responsibilities</h3>
 
-<ul style="line-height:1.8; color:#ddd; padding-left:20px;">
+<ul style="line-height:1.8; color:black; padding-left:20px;">
 
   <li>Monitored production processes and identified quality issues, deviations, and non-conformances.</li>
 
@@ -175,7 +175,7 @@
 </ul>
 
 
-  </div>
+</div>
 
 </div>
 <br>
@@ -228,7 +228,7 @@
 
     <h3 style="color:#2ecc71;">Technologies Learning</h3>
 
-    <ul style="line-height:1.8; color:#ddd;">
+    <ul style="line-height:1.8; color:black;">
       <li>Java</li>
       <li>HTML5</li>
       <li>CSS3</li>
@@ -423,7 +423,7 @@
                     <div class="social-links">
                         <a href="https://www.linkedin.com/in/manikandan-mani-19b177308"><i class="fab fa-linkedin"></i></a>
                         <a href="https://github.com/manikandan47899"><i class="fab fa-github"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://wa.me/6383257486?text=Hello!"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
             </div>
@@ -476,12 +476,24 @@ function closeStudyModal(){
   document.body.style.overflow = "auto";
 }
 </script>
+<script>
+window.addEventListener("click", function(e){
+
+  const expModal = document.getElementById("experienceModal");
+  const studyModal = document.getElementById("studyModal");
+
+  if(e.target === expModal){
+    closeModal();
+  }
+
+  if(e.target === studyModal){
+    closeStudyModal();
+  }
+
+});
+</script>
+
 
 
 </body>
 </html>
-
-
-
-
-
